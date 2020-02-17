@@ -54,7 +54,7 @@ public class VariablesDemo {
 	
 	// instance variable
 	int iVar;
-	
+	    
 	// static variable
 	static int sVar;
 	
@@ -69,7 +69,7 @@ public class VariablesDemo {
 		System.out.println(sVar);
 	}
 	
-	
+	 
 	// static method
 	public static void main(String[] args) {
 		// local variable
