@@ -45,5 +45,65 @@ package basics;
  */
 
 public class ArraysDemo {
+	
+	public static void main(String[] args) {
+		// 1D array declaration
+		int[] nums = new int[6];
+		
+		// find the number of items in an array
+		System.out.println(nums.length);
+		
+		// store values in an array
+		nums[0] = 12;
+		nums[1] = 19;
+		nums[2] = 14;
+		nums[3] = 10;
+		nums[4] = 13;
+		nums[5] = 11;
+		
+		
+		
+		// retrieve the data from an array
+		System.out.println(nums[0]);
+		System.out.println(nums[1]);
+		System.out.println(nums[2]);
+		System.out.println(nums[3]);
+		System.out.println(nums[4]);
+		System.out.println(nums[5]);
+//		System.out.println(nums[6]); index number must less than length of array
+		
+		
+		// initialize an array
+		char[] vowels = {'a' ,'e', 'i', 'o','u'};
+		
+		
+		// retrieve values from vowels array
+		System.out.println(vowels[0]);
+		System.out.println(vowels[1]);
+		System.out.println(vowels[2]);
+		System.out.println(vowels[3]);
+		System.out.println(vowels[4]);
+		
+		// 2D array declaration
+		int[][] m1 = new int[2][2];
+		
+		// store some values in m1 array
+		m1[0][0] = 8;
+		m1[0][1] = 10;
+		m1[1][0] = 19;
+		m1[1][1] = 11;
+		
+		// retrieve the data from m1 array
+		System.out.println(m1[0][0]);
+		System.out.println(m1[0][1]);
+		System.out.println(m1[1][0]);
+		System.out.println(m1[1][1]);
+ 		
+		
+		
+		
+	}
+	
+	
 
 }
