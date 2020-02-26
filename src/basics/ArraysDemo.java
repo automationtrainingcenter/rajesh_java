@@ -54,9 +54,11 @@ public class ArraysDemo {
 		System.out.println(nums.length);
 		
 		// store values in an array
+		nums[2] = 14;
 		nums[0] = 12;
 		nums[1] = 19;
-		nums[2] = 14;
+		
+		nums[2]=15;
 		nums[3] = 10;
 		nums[4] = 13;
 		nums[5] = 11;
@@ -87,14 +89,20 @@ public class ArraysDemo {
 		// 2D array declaration
 		int[][] m1 = new int[2][2];
 		
+		
 		// store some values in m1 array
 		m1[0][0] = 8;
 		m1[0][1] = 10;
 		m1[1][0] = 19;
 		m1[1][1] = 11;
+		System.out.println(m1.length);
+		System.out.println(m1[0].length);
+		
+		
 		
 		// retrieve the data from m1 array
 		System.out.println(m1[0][0]);
+		
 		System.out.println(m1[0][1]);
 		System.out.println(m1[1][0]);
 		System.out.println(m1[1][1]);

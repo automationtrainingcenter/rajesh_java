@@ -185,9 +185,22 @@ public class DataTypesDemo {
 		
 		// string float
 		String s2 = "9.8";
+	//	int i10=Integer.parseInt(s2);
 		float s2Tof = Float.parseFloat(s2);
-//		int f2i = (int) s2Tof;
+	//	int f2i = (int) s2Tof;
 		System.out.println(s2Tof+10);
+		
+		String s="587";
+		int i2=Integer.parseInt(s);
+		System.out.println(i2+10);
+		
+		String s3="567";
+		float f2=Float.parseFloat(s3);
+		System.out.println(f2+3);
+		
+		int a=10;
+		String s4=Integer.toString(a);
+		System.out.println(s4+10);
 		
 		
 		
