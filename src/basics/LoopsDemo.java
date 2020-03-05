@@ -56,6 +56,10 @@ package basics;
  *
  *to stop infinite loop we use press ctrl + c in command prompt
  *or we can click stop button in eclipse console
+ *
+ *
+ *break -- it is a statement which is used to terminate loop block
+ *continue -- it is a statement which will skip the current iteration and continues next iterations
  */
 
 public class LoopsDemo {
@@ -97,7 +101,7 @@ public class LoopsDemo {
 
 		// reverse the given string
 		// selenium :: muineles
-		String str = "madam";
+		String str = "sunshine";
 		String rstr = "";
 
 //		for (int k = 1; k <= str.length(); k++) {
@@ -130,6 +134,61 @@ public class LoopsDemo {
 		} else {
 			System.out.println("given number is not palindrome");
 		}
+
+		// remove duplicates from a String
+		str = "sunshine institute";
+		String nodupes = "";
+//		for(int s = 0; s < str.length(); s++) {
+//			char ch = str.charAt(s);
+//			if(nodupes.indexOf(ch) == -1) {
+//				nodupes += ch;
+//			}
+//		}
+
+		for (int s = 0; s < str.length(); s++) {
+			String ch = str.substring(s, s + 1);
+			if (!nodupes.contains(ch)) {
+				nodupes = nodupes.concat(ch);
+			}
+		}
+		System.out.println(nodupes);
+
+		// break and continue
+		for (int l = 0; l < 10; l++) {
+			if (l == 5) {
+//				break;
+				continue;
+			}
+			System.out.println(l);
+		}
+
+		System.out.println("$$$$$$$$$ After for $$$$$$$$$$$$$");
+
+		// print even numbers from 0 to 10 (excluded)
+		for (int l = 0; l < 10; l++) {
+			if (l % 2 == 1) {
+				continue;
+			}
+			System.out.println(l);
+		}
+
+		// verify a given number is prime number or not
+		int p = 25;
+		boolean status = true;
+		for (int l = 2; l <= p / 2; l++) {
+			if(p % l  == 0) {
+				System.out.println("number is not prime and is divsible by "+l);
+				status = false;
+				break;
+			}
+		}
+		if(status) {
+			System.out.println("number is prime");		
+		}
+	
+		
+		
+		
 
 	}
 
