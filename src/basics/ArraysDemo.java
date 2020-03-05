@@ -64,23 +64,40 @@ public class ArraysDemo {
 		nums[5] = 11;
 
 		// retrieve the data from an array
-		System.out.println(nums[0]);
-		System.out.println(nums[1]);
-		System.out.println(nums[2]);
-		System.out.println(nums[3]);
-		System.out.println(nums[4]);
-		System.out.println(nums[5]);
+//		System.out.println(nums[0]);
+//		System.out.println(nums[1]);
+//		System.out.println(nums[2]);
+//		System.out.println(nums[3]);
+//		System.out.println(nums[4]);
+//		System.out.println(nums[5]);
 //		System.out.println(nums[6]); index number must less than length of array
+
+		// retrieve the data from an array using normal for loop
+		for (int i = 0; i < nums.length; i++) {
+			System.out.println(i +" :: "+nums[i]);
+		}
+		
+		// retrieve the data from an array using while loop
+//		int i = 0;
+//		while (i < nums.length) {
+//			System.out.println(i + " :: " + nums[i]);
+//			i++;
+//		}
 
 		// initialize an array
 		char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
 
 		// retrieve values from vowels array
-		System.out.println(vowels[0]);
-		System.out.println(vowels[1]);
-		System.out.println(vowels[2]);
-		System.out.println(vowels[3]);
-		System.out.println(vowels[4]);
+//		System.out.println(vowels[0]);
+//		System.out.println(vowels[1]);
+//		System.out.println(vowels[2]);
+//		System.out.println(vowels[3]);
+//		System.out.println(vowels[4]);
+
+		// retrieve teh data from vowels array using for each loop
+		for (char vowel : vowels) {
+			System.out.println(vowel);
+		}
 
 		// 2D array declaration
 		int[][] m1 = new int[2][2];
@@ -130,29 +147,28 @@ public class ArraysDemo {
 
 		// 2D array with unequal number of columns
 		int[][] m3 = { { 1, 2 }, { 3, 4, 5 }, { 6, 7, 8, 9 } };
-		
-		System.out.println("number of rows in m3 :: "+m3.length);
-		System.out.println("number of columns in 1st row :: "+m3[0].length); // 2
-		System.out.println("number of columns in 2nd row :: "+m3[1].length); // 3
-		System.out.println("number of columns in 3rd row :: "+m3[2].length); // 4
-		
-		
+
+		System.out.println("number of rows in m3 :: " + m3.length);
+		System.out.println("number of columns in 1st row :: " + m3[0].length); // 2
+		System.out.println("number of columns in 2nd row :: " + m3[1].length); // 3
+		System.out.println("number of columns in 3rd row :: " + m3[2].length); // 4
+
 		// retrieve the data for m3 array
 		// ************** FIRST ROW ****************
-		System.out.print(m3[0][0]+" ");
+		System.out.print(m3[0][0] + " ");
 		System.out.println(m3[0][1]);
-		
+
 		// ************** SECOND ROW ****************
-		System.out.print(m3[1][0]+" ");
-		System.out.print(m3[1][1]+" ");
+		System.out.print(m3[1][0] + " ");
+		System.out.print(m3[1][1] + " ");
 		System.out.println(m3[1][2]);
-		
+
 		// ************** SECOND ROW ****************
-		System.out.print(m3[2][0]+" ");
-		System.out.print(m3[2][1]+" ");
-		System.out.print(m3[2][2]+" ");
+		System.out.print(m3[2][0] + " ");
+		System.out.print(m3[2][1] + " ");
+		System.out.print(m3[2][2] + " ");
 		System.out.println(m3[2][3]);
-				
+
 	}
 
 }
