@@ -84,26 +84,25 @@ public class ArraysDemo {
 
 		// 2D array declaration
 		int[][] m1 = new int[2][2];
-<<<<<<< HEAD
-		
-		
-=======
 
->>>>>>> dd5c7213ac101ed1998826dd75b27444417d1515
+		
+		
+
+
 		// store some values in m1 array
 		m1[0][0] = 8;
 		m1[0][1] = 10;
 		m1[1][0] = 19;
 		m1[1][1] = 11;
-<<<<<<< HEAD
+
 		System.out.println(m1.length);
 		System.out.println(m1[0].length);
 		
 		
 		
-=======
 
->>>>>>> dd5c7213ac101ed1998826dd75b27444417d1515
+
+
 		// retrieve the data from m1 array
 		System.out.println(m1[0][0]);
 		
