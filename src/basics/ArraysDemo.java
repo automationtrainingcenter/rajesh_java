@@ -72,9 +72,9 @@ public class ArraysDemo {
 
 		// retrieve the data from an array using normal for loop
 		for (int i = 0; i < nums.length; i++) {
-			System.out.println(i +" :: "+nums[i]);
+			System.out.println(i + " :: " + nums[i]);
 		}
-		
+
 		// retrieve the data from an array using while loop
 //		int i = 0;
 //		while (i < nums.length) {
@@ -107,28 +107,44 @@ public class ArraysDemo {
 		m1[1][1] = 11;
 
 		// retrieve the data from m1 array
-		System.out.println(m1[0][0]);
-		System.out.println(m1[0][1]);
-		System.out.println(m1[1][0]);
-		System.out.println(m1[1][1]);
+//		System.out.println(m1[0][0]);
+//		System.out.println(m1[0][1]);
+//		System.out.println(m1[1][0]);
+//		System.out.println(m1[1][1]);
+		System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&7");
+		for (int r = 0; r < m1.length; r++) {
+
+//			System.out.println("number of columns in row "+r+" is "+m1[r].length);
+			for (int c = 0; c < m1[r].length; c++) {
+				System.out.print(m1[r][c] + "\t");
+			}
+			System.out.println();
+		}
 
 		// 2D array initialization
 		int[][] m2 = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 		// retrieve the data from m2 array
-		// **********FIRST ROW*****************
-		System.out.print(m2[0][0] + "\t");
-		System.out.print(m2[0][1] + "\t");
-		System.out.print(m2[0][2] + "\n");
-
-		// **********SECOND ROW****************
-		System.out.print(m2[1][0] + "\t");
-		System.out.print(m2[1][1] + "\t");
-		System.out.print(m2[1][2] + "\n");
-
-		// ***********THIRD ROW*****************
-		System.out.print(m2[2][0] + "\t");
-		System.out.print(m2[2][1] + "\t");
-		System.out.print(m2[2][2] + "\n");
+//		// **********FIRST ROW*****************
+//		System.out.print(m2[0][0] + "\t");
+//		System.out.print(m2[0][1] + "\t");
+//		System.out.print(m2[0][2] + "\n");
+//
+//		// **********SECOND ROW****************
+//		System.out.print(m2[1][0] + "\t");
+//		System.out.print(m2[1][1] + "\t");
+//		System.out.print(m2[1][2] + "\n");
+//
+//		// ***********THIRD ROW*****************
+//		System.out.print(m2[2][0] + "\t");
+//		System.out.print(m2[2][1] + "\t");
+//		System.out.print(m2[2][2] + "\n");
+		System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&7");
+		for (int r = 0; r < m2.length; r++) {
+			for (int c = 0; c < m2[r].length; c++) {
+				System.out.print(m2[r][c] + "\t");
+			}
+			System.out.println();
+		}
 
 		// 2D array with unequal number of columns
 		int[][] m3 = { { 1, 2 }, { 3, 4, 5 }, { 6, 7, 8, 9 } };
@@ -140,20 +156,49 @@ public class ArraysDemo {
 
 		// retrieve the data for m3 array
 		// ************** FIRST ROW ****************
-		System.out.print(m3[0][0] + " ");
-		System.out.println(m3[0][1]);
+//		System.out.print(m3[0][0] + " ");
+//		System.out.println(m3[0][1]);
+//
+//		// ************** SECOND ROW ****************
+//		System.out.print(m3[1][0] + " ");
+//		System.out.print(m3[1][1] + " ");
+//		System.out.println(m3[1][2]);
+//
+//		// ************** SECOND ROW ****************
+//		System.out.print(m3[2][0] + " ");
+//		System.out.print(m3[2][1] + " ");
+//		System.out.print(m3[2][2] + " ");
+//		System.out.println(m3[2][3]);
 
-		// ************** SECOND ROW ****************
-		System.out.print(m3[1][0] + " ");
-		System.out.print(m3[1][1] + " ");
-		System.out.println(m3[1][2]);
+		System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&7");
+//		for (int r = 0; r < m3.length; r++) {
+//			for (int c = 0; c < m3[r].length; c++) {
+//				System.out.print(m3[r][c] + " ");
+//			}
+//			System.out.println();
+//		}
 
-		// ************** SECOND ROW ****************
-		System.out.print(m3[2][0] + " ");
-		System.out.print(m3[2][1] + " ");
-		System.out.print(m3[2][2] + " ");
-		System.out.println(m3[2][3]);
+//		for(int[] row : m3) {
+//			for(int column : row) {
+//				System.out.print(column+" ");
+//			}
+//			System.out.println();
+//		}
 
+//		for (int r = 0; r < m3.length; r++) {
+//			for(int value : m3[r]) {
+//				System.out.print(value+" ");
+//			}
+//			System.out.println();
+//		}
+
+		for(int[] oneDarr : m3) {
+			for(int c = 0; c < oneDarr.length; c++) {
+				System.out.print(oneDarr[c]+" ");
+			}
+			System.out.println();
+		}
+		
 	}
 
 }

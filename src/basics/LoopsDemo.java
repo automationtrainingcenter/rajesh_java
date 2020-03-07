@@ -1,4 +1,7 @@
 package basics;
+
+import java.util.Scanner;
+
 /*
  * Loops are used to execute a block of statements repeatedly based on some
  * condition. Each and every repetition is known as an iteration.
@@ -176,19 +179,43 @@ public class LoopsDemo {
 		int p = 25;
 		boolean status = true;
 		for (int l = 2; l <= p / 2; l++) {
-			if(p % l  == 0) {
-				System.out.println("number is not prime and is divsible by "+l);
+			if (p % l == 0) {
+				System.out.println("number is not prime and is divsible by " + l);
 				status = false;
 				break;
 			}
 		}
-		if(status) {
-			System.out.println("number is prime");		
+		if (status) {
+			System.out.println("number is prime");
 		}
-	
-		
-		
-		
+
+		// read a number until we enter a prime number
+		Scanner sc = new Scanner(System.in);
+		int number;
+		boolean flag;
+		do {
+			flag = false;
+			System.out.println("enter a number");
+			number = sc.nextInt();
+			System.out.println("number ::: " + number);
+			// verify number is prime or not
+			for (int l = 2; l <= number / 2; l++) {
+				if (number % l == 0) {
+					flag = true;
+					break; // it breaks for loop
+				}
+			}
+		} while (flag);
+
+		// reverse every string of a string array
+		for (int c = 0; c < courses.length; c++) {
+			// reverse every string
+			String rcourse = "";
+			for (int k = courses[c].length() - 1; k >= 0; k--) {
+				rcourse += courses[c].charAt(k);
+			}
+			System.out.println(rcourse);
+		}
 
 	}
 
