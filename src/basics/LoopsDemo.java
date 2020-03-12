@@ -124,10 +124,10 @@ public class LoopsDemo {
 		int rn = 0;
 		int temp = num;
 		while (temp > 0) {
-			int r = temp % 10;
-			temp = temp / 10;
-			rn = rn * 10;
-			rn = rn + r;
+			int r = temp % 10; // 1		2		7		6		1
+			temp = temp / 10; // 1672	167		16		1		0
+			rn = rn * 10; // 	 0		10		120		1270	12760
+			rn = rn + r; // 	 1		12		127		1276	12761
 //			System.out.println(rn);
 		}
 
