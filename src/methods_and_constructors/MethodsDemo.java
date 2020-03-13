@@ -75,7 +75,7 @@ public class MethodsDemo {
 		// with in main method
 		MethodsDemo obj = new MethodsDemo();
 //		obj.methodOne();
-//		boolean r1 = obj.methodTwo();
+		boolean r1 = obj.methodTwo();
 //		System.out.println(r1);
 //		obj.methodThree(10);
 		int r2 = obj.methodFour(10, 20);
