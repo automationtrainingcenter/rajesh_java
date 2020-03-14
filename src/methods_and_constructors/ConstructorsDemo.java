@@ -1,4 +1,7 @@
 package methods_and_constructors;
+
+import java.io.File;
+
 /*
  * Constructor is a method which will have same name as class name
  * 
@@ -27,7 +30,8 @@ package methods_and_constructors;
  * 
  * 
  * we can call one constructor from another constructor using "this" keyword. This concepts
- * is known as Constructor Chaining. 
+ * is known as Constructor Chaining. Constructor call from another constructor must be the
+ * first line of the constructor.
  * 
  * "this" keyword represents current class instance.
  * "this" keyword can be used for constructor chaining as well as to differentiate
@@ -66,6 +70,7 @@ public class ConstructorsDemo {
 		ConstructorsDemo obj2 = new ConstructorsDemo();
 		System.out.println("Object 2 Details\ni = " + obj2.i);
 		System.out.println("j = " + obj2.j);
+		
 	}
 
 }
