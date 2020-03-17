@@ -6,5 +6,9 @@ public class ChildOne extends Parent{
 		super();
 		System.out.println("ChildOne class object created");
 	}
+
 	
+	public void methodTwo() {
+		System.out.println("method two of child one class");
+	}
 }
