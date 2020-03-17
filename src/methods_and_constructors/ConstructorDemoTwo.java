@@ -9,7 +9,7 @@ public class ConstructorDemoTwo {
 	String address;
 	long phNum;
 	
-	// default constructor
+	// default constructorx
 	public ConstructorDemoTwo() {
 		id = 100;
 		name = "surya";

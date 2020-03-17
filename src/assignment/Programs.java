@@ -8,7 +8,7 @@ public class Programs {
 
 	// divisible of 3
 
-	// copy the data of an array into another array
+	**// copy the data of an array into another array
 	
 
 	// find the length of an array without using length property of array (for each loop)
@@ -16,22 +16,22 @@ public class Programs {
 
 	// find given character is vowel or not
 
-	// matrix addition
+	**// matrix addition
 
-	// verify given number is palindrome or not
+	**// verify given number is palindrome or not
 	
 	// factorial of a given number 5 -- 1*2*3*4*5 = 120
 
 	// reverse of the given string 
 
-	// print prime numbers until given number
+	**// print prime numbers until given number
 
-	// find given matrix is identity matrix or not
+	**// find given matrix is identity matrix or not
 
 	// sum and average of elements in an int array
 
 
-	// find the number of vowels in a given string selenium -- 3
+	**// find the number of vowels in a given string selenium -- 3
 
 	
 }
