@@ -20,5 +20,19 @@ package polymorphism;
  *
  */
 public class PolymorphismDemo {
+	public static void main(String[] args) {
+		// compile time polymorphism
+		CompileTimePolyDemo obj = new CompileTimePolyDemo();
+		obj.add("10", 20);
+		obj.add(10, "20");
+		obj.add(10, 20);
+		obj.add("10", 10, 20);
+		
+		
+		// runtime polymorphism
+		RunTimePolyParent pObj = new RuntimePolyChild();
+		pObj.add("10", 20);
+		
+	}
 
 }
