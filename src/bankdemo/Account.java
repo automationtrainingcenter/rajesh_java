@@ -9,7 +9,7 @@ public class Account {
 	private String name;
 	private String address;
 	private String phoneNum;
-	private double balance;
+	protected double balance;
 	private String panNum;
 	private long aadharNum;
 	private int pin;
@@ -73,20 +73,20 @@ public class Account {
 	public void setPin(int pin) {
 		if (this.pin == 0) {
 			this.pin = pin;
-		}else {
+		} else {
 			System.out.println("To Update the pin please enter your phone number");
 			String phoneNum = sc.next();
-			if(this.phoneNum.equals(phoneNum)) {
+			if (this.phoneNum.equals(phoneNum)) {
 				this.pin = pin;
 				System.out.println("pin updated successfully");
-			}else {
+			} else {
 				System.out.println("unauthorized access to update the pin");
 			}
 		}
 	}
 
 	// validate
-	public boolean validate() {
+	protected boolean validate() {
 		System.out.println("enter your pin");
 		int pin = sc.nextInt();
 		if (this.pin == pin) {
@@ -99,17 +99,17 @@ public class Account {
 
 	// withdraw
 	public double withdraw(double amount) {
-		if(amount >= 0) {
-			if(validate()) {
-				if(this.balance >= amount) {
+		if (amount >= 0) {
+			if (validate()) {
+				if (this.balance >= amount) {
 					this.balance -= amount;
 					System.out.println("withdraw success\nPlease collect your cash");
 					return amount;
-				}else {
+				} else {
 					System.out.println("insufficient balance");
 				}
 			}
-		}else {
+		} else {
 			System.out.println("invalid amount");
 		}
 		return 0;
@@ -117,21 +117,19 @@ public class Account {
 
 	// deposit
 	public void deposit(double amount) {
-		if(amount >= 0) {
-			if(validate()) {
+		if (amount >= 0) {
+			if (validate()) {
 				this.balance += amount;
 				System.out.println("deposite success");
 			}
-		}else {
+		} else {
 			System.out.println("invalid amount");
 		}
 	}
 
 	// display
 	public void display() {
-		System.out.println("account number : "+this.id+
-				"\nname : "+this.name+
-				"\naddress : "+this.address+
-				"\nbalance : "+this.balance);
+		System.out.println("account number : " + this.id + "\nname : " + this.name + "\naddress : " + this.address
+				+ "\nbalance : " + this.balance);
 	}
 }
