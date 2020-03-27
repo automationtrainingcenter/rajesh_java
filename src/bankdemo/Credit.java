@@ -1,6 +1,6 @@
 package bankdemo;
 
-public class Credit extends Account {
+public class Credit extends BaseAccount {
 	private double creditLimit;
 	private double cashLimit;
 	private static final double fee = 300;

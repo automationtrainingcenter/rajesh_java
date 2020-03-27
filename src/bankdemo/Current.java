@@ -1,6 +1,6 @@
 package bankdemo;
 
-public class Current extends Account {
+public class Current extends BaseAccount {
 	private static final double minBalance = 20000;
 	private static final double fee = 500;
 
