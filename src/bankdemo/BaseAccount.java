@@ -86,7 +86,7 @@ public class BaseAccount implements Account {
 	}
 
 	// validate
-	public boolean validate() {
+	protected boolean validate() {
 		System.out.println("enter your pin");
 		int pin = sc.nextInt();
 		if (this.pin == pin) {
