@@ -17,9 +17,7 @@ public interface Account {
 	public String getPanNum();
 	
 	public void setPin(int pin);
-	
-	 public boolean validate();
-	
+		
 	public double withdraw(double amount);
 	
 	public void deposit(double amount);
