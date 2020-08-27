@@ -1,3 +1,5 @@
+
+
 package abstraction;
 
 @FunctionalInterface // introduced in 1.8

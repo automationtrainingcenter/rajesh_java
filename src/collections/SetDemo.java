@@ -46,7 +46,7 @@ public class SetDemo {
 		for (String course : courses) {
 			System.out.println(course.toUpperCase());
 		}
-
+		
 		// retrieve the data from the set using iterator interface
 		/*
 		 * Iterator interface contains hasNext() and next() hasNext() returns true if
